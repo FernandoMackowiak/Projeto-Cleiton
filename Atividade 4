@@ -1,0 +1,101 @@
+Verificação de idade:
+Escreva um programa Java que pede ao usuário para inserir sua idade. O programa deve então verificar se a idade é maior ou igual a 18. Se for, deve imprimir "Você é maior de idade". Caso contrário, deve imprimir "Você é menor de idade".
+
+package NewProject;
+
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, insira sua idade:");
+
+            int idade = scanner.nextInt();
+
+            if (idade >= 18) {
+                System.out.println("Você é maior de idade.");
+            } else {
+                System.out.println("Você é menor de idade.");
+            }
+
+            scanner.close();
+        }
+    }
+
+Verificação de número par ou ímpar:
+Escreva um programa Java que solicita ao usuário inserir um número inteiro. O programa deve então verificar se o número é par ou ímpar e imprimir a mensagem correspondente.
+
+package NewProject;
+
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, insira um número:");
+
+            int number = scanner.nextInt();
+
+            if (number % 2 == 0 ) {
+                System.out.println("O número é par.");
+            } else {
+                System.out.println("O número é impar");
+            }
+
+            scanner.close();
+        }
+    }
+
+Verificação de login:
+Crie um programa Java que pede ao usuário para inserir seu nome de usuário e senha. Se o nome de usuário for "usuario" e a senha for "senha123", o programa deve imprimir "Login bem-sucedido". Caso contrário, deve imprimir "Nome de usuário ou senha incorretos".
+
+package NewProject;
+
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, insira seu usuário:");
+            String name = scanner.nextLine();
+
+            System.out.println("Por favor, insira sua senha:");
+           String password = scanner.nextLine();
+
+
+            if (name.equals("usuario") && password.equals("senha123")) {
+                System.out.println("Login bem-sucedido.");
+            } else {
+                System.out.println("Nome de usuário ou senha incorretos");
+            }
+
+            scanner.close();
+        }
+    }
+
+Verificação de maior número:
+Escreva um programa Java que solicita ao usuário inserir dois números inteiros. O programa deve então determinar qual dos dois números é o maior e imprimir essa informação.
+
+package NewProject;
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Por favor, insira o primeiro número:");
+        int FirstNumber = scanner.nextInt();
+        System.out.println("Por favor, insira o segundo número:");
+        int SecondNumber = scanner.nextInt();
+
+
+        if (FirstNumber > SecondNumber ) {
+            System.out.println("O Primeiro número é maior.");
+        } else {
+            System.out.println("O Segundo número é maior");
+
+        scanner.close();
+    }
+}
+
+    }
