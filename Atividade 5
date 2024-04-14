@@ -1,0 +1,249 @@
+Escreva um programa que imprima os números de 1 a 50. Se o número for divisível por 3, imprima "Fizz", se for divisível por 5, imprima "Buzz". Se for divisível por ambos, imprima "FizzBuzz”;
+
+public class FizzBuzz {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 50; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+**Programa em Java dos patinhos da Xuxa**
+
+Xuxa, a rainha dos baixinhos, criou uma música que tem o segunte formato:
+
+*n patinhos foram passearAlém das montanhasPara brincarA mamãe gritou: Quá, quá, quá, quá*
+
+*Mas só n-1 patinhos voltaram de lá* 
+
+.
+
+Que se repete até nenhum patinho voltar de lá.
+
+Ao final, todos os patinhos voltam:
+
+*A mamãe patinha foi procurarAlém das montanhasNa beira do marA mamãe gritou: Quá, quá, quá, quáE os n patinhos voltaram de lá.*
+
+Crie um programa em Java que recebe um inteiro positivo do usuário e exibe a música inteira na tela, onde o inteiro recebido representa o número inicial *n* de patinhos que foram passear.
+
+package NewProject;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite o número inicial de patinhos:");
+        int numeroDePatinhos = scanner.nextInt();
+
+        if (numeroDePatinhos <= 0) {
+            System.out.println("Por favor, digite um número positivo.");
+            return;
+        }
+        for (int i = numeroDePatinhos; i >= 1; i--) {
+            if (i > 1) {
+                System.out.println(i + " patinhos foram passear");
+                System.out.println("Além das montanhas");
+                System.out.println("Para brincar");
+                System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+                System.out.println();
+                System.out.println("Mas só " + (i - 1) + " patinhos voltaram de lá");
+                System.out.println();
+            } else {
+                System.out.println("A mamãe patinha foi procurar");
+                System.out.println("Além das montanhas");
+                System.out.println("Na beira do mar");
+                System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+                System.out.println("E os " + numeroDePatinhos + " patinhos voltaram de lá.");
+            }
+        }
+
+        scanner.close();
+    }
+}
+
+Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
+mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30.
+(Ex: 3 anos, 2 meses e 15 dias = 1170 dias.)
+
+import java.util.Scanner;
+
+public class Age {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite sua idade em anos");
+        int years = scanner.nextInt();
+
+        System.out.println("Digite sua idade em meses");
+        int months = scanner.nextInt();
+
+        System.out.println("Digite sua idade em dias");
+        int days = scanner.nextInt();
+
+        int totalDays = (years * 365) + (months * 30) + days;
+
+        System.out.println(years + " Anos " + months + " Meses e " + days + " Dias são: " + totalDays + " Dias");
+
+        scanner.close();
+    }
+}
+
+Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e
+100, quantos estão entre 101 e 200 e quantos são maiores de 200
+
+import java.util.Scanner;
+
+public class ContarNumeros {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int conta0a100 = 0;
+        int conta101a200 = 0;
+        int contaMaior200 = 0;
+
+        for(int i = 0; i < 20; i++) {
+            System.out.println("Digite o número " + (i + 1) + " :");
+            int numero = scanner.nextInt();
+
+            if (numero >= 0 && numero <= 100) {
+                conta0a100++;
+            } else if (numero >= 101 && numero <= 200) {
+                conta101a200++;
+            } else {
+                contaMaior200++;
+            }
+        }
+        System.out.println("Quantidade de números entre 0 e 100: " + conta0a100);
+        System.out.println("Quantidade de números entre 101 e 200: " + conta101a200);
+        System.out.println("Quantidade de números maiores do que 200: " + contaMaior200);
+
+        scanner.close();
+        }
+    }
+
+Crie um Objeto chamado Carro, definina quais são as suas caracteristicas e metodos e crie uma outra classe Chamada CarroTeste para criar o objeto e testar.
+
+public class Carro {
+
+    public String nome;
+    public int ano;
+    public int velocidade;
+
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Ano: " + ano);
+        System.out.println("Velocidade: " + ano);
+    }
+}
+
+Crie uma classe Java chamada **`ContaBancaria`** que represente uma conta bancária simples. A classe deve ter os seguintes atributos privados:
+
+- **`saldo`**, do tipo **`double`**, representando o saldo atual da conta.
+- **`numeroConta`**, do tipo **`String`**, representando o número da conta bancária.
+
+A classe **`ContaBancaria`** deve ter os seguintes métodos públicos:
+
+- Um método chamado **`depositar(double valor)`** que recebe um valor como parâmetro e adiciona esse valor ao saldo da conta.
+- Um método chamado **`sacar(double valor)`** que recebe um valor como parâmetro e subtrai esse valor do saldo da conta, desde que haja saldo suficiente. Caso contrário, deve exibir uma mensagem de erro.
+- Um método chamado **`consultarSaldo()`** que retorna o saldo atual da conta.
+
+public class ContaBancaria {
+    private double saldo;
+    private String numeroConta;
+    
+    public ContaBancaria(String numeroConta) {
+        this.numeroConta = numeroConta;
+        this.saldo = 0.0; // Inicializa o saldo como zero
+    }
+    public void depositar(double valor) {
+        if (valor > 0) {
+            saldo += valor;
+            System.out.println("Depósito de R$" + valor + " realizado com sucesso.");
+        } else {
+            System.out.println("Valor inválido para depósito.");
+        }
+    }
+    public void sacar(double valor) {
+        if (valor > 0 && saldo >= valor) {
+            saldo -= valor;
+            System.out.println("Saque de R$" + valor + " realizado com sucesso.");
+        } else {
+            System.out.println("Saldo insuficiente para realizar o saque ou valor inválido.");
+        }
+    }
+    public double consultarSaldo() {
+        return saldo;
+    }
+}
+
+Crie uma classe Java chamada **`Produto`** que represente um produto em um sistema de estoque. A classe deve ter os seguintes atributos privados:
+
+- **`codigo`**, do tipo **`int`**, representando o código do produto.
+- **`descricao`**, do tipo **`String`**, representando a descrição do produto.
+- **`preco`**, do tipo **`double`**, representando o preço unitário do produto.
+- **`quantidadeEmEstoque`**, do tipo **`int`**, representando a quantidade disponível em estoque do produto.
+
+A classe **`Produto`** deve ter os seguintes métodos públicos:
+
+- Um construtor que recebe como parâmetros o código, a descrição, o preço e a quantidade inicial em estoque do produto.
+- Métodos de acesso (getters) para todos os atributos da classe.
+- Um método chamado **`adicionarEstoque(int quantidade)`** que recebe uma quantidade como parâmetro e adiciona essa quantidade ao estoque do produto.
+- Um método chamado **`removerEstoque(int quantidade)`** que recebe uma quantidade como parâmetro e remove essa quantidade do estoque do produto, desde que haja estoque suficiente. Caso contrário, deve exibir uma mensagem de erro.
+
+public class Produto {
+    private int codigo;
+    private String descricao;
+    private double preco;
+    private int quantidadeEmEstoque;
+   
+    public Produto(int codigo, String descricao, double preco, int quantidadeEmEstoque) {
+        this.codigo = codigo;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+    
+    public int getCodigo() {
+        return codigo;
+    }
+    
+    public String getDescricao() {
+        return descricao;
+    }
+    
+    public double getPreco() {
+        return preco;
+    }
+    
+    public int getQuantidadeEmEstoque() {
+        return quantidadeEmEstoque;
+    }
+    
+    public void adicionarEstoque(int quantidade) {
+        if (quantidade > 0) {
+            quantidadeEmEstoque += quantidade;
+            System.out.println("Estoque adicionado: " + quantidade + " unidades.");
+        } else {
+            System.out.println("Quantidade inválida para adicionar ao estoque.");
+        }
+    }
+    
+    public void removerEstoque(int quantidade) {
+        if (quantidade > 0 && quantidade <= quantidadeEmEstoque) {
+            quantidadeEmEstoque -= quantidade;
+            System.out.println("Estoque removido: " + quantidade + " unidades.");
+        } else {
+            System.out.println("Quantidade inválida para remover do estoque ou estoque insuficiente.");
+        }
+    }
+}
