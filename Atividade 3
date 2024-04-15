@@ -2,7 +2,7 @@ ATIVIDADE 03 - ENTRADA/PROCESSAMENTO/SAIDA
 
 Faça um sistema que peça 3 valores some os 3 e mostre o total;
 
-import java.util.Scanner;
+R) import java.util.Scanner;
 import java.util.Scanner;
 
 public class SomaTresValores {
@@ -28,7 +28,7 @@ public class SomaTresValores {
 
 2 - Faça um sistema que peça 2 valores e faça uma subtração.
 
-import java.util.Scanner;
+R) import java.util.Scanner;
 
 public class SubtracaoDoisValores {
     public static void main(String[] args) {
@@ -50,7 +50,7 @@ public class SubtracaoDoisValores {
 
 3 - Faça um sistema que peça 2 notas para o usuario some as duas e divida por 2;
 
-import java.util.Scanner;
+R) import java.util.Scanner;
 
 public class MediaDuasNotas {
     public static void main(String[] args) {
@@ -72,7 +72,7 @@ public class MediaDuasNotas {
 
 4 - Faça um sistema que peça 4 notas divida por 4 e peça se foi aprovado ou reprovado
 
-import java.util.Scanner;
+R) import java.util.Scanner;
 
 public class MediaQuatroNotas {
     public static void main(String[] args) {
@@ -106,7 +106,7 @@ public class MediaQuatroNotas {
 
 5 - Faça um sistema que o usuario vai informar 2 numeros e o sistema deve retornar a soma, subtração, divisão e multiplicação dos dois numeros.
 
-import java.util.Scanner;
+R) import java.util.Scanner;
 
 public class OperacoesMatematicas {
     public static void main(String[] args) {
@@ -134,7 +134,7 @@ public class OperacoesMatematicas {
 
 6 - Faça um sistema que pergunte para o usuario o nome, preço de produto, após isso pergunte qual o percentual de desconto, a saida precisa ser o nome do produto e o novo preço.
 
-import java.util.Scanner;
+R) import java.util.Scanner;
 
 public class SistemaDescontoProduto {
     public static void main(String[] args) {
