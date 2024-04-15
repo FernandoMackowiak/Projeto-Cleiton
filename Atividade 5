@@ -1,6 +1,6 @@
-Escreva um programa que imprima os números de 1 a 50. Se o número for divisível por 3, imprima "Fizz", se for divisível por 5, imprima "Buzz". Se for divisível por ambos, imprima "FizzBuzz”;
+1- Escreva um programa que imprima os números de 1 a 50. Se o número for divisível por 3, imprima "Fizz", se for divisível por 5, imprima "Buzz". Se for divisível por ambos, imprima "FizzBuzz”;
 
-public class FizzBuzz {
+R) public class FizzBuzz {
     public static void main(String[] args) {
         for (int i = 1; i <= 50; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
@@ -32,9 +32,9 @@ Ao final, todos os patinhos voltam:
 
 *A mamãe patinha foi procurarAlém das montanhasNa beira do marA mamãe gritou: Quá, quá, quá, quáE os n patinhos voltaram de lá.*
 
-Crie um programa em Java que recebe um inteiro positivo do usuário e exibe a música inteira na tela, onde o inteiro recebido representa o número inicial *n* de patinhos que foram passear.
+2- Crie um programa em Java que recebe um inteiro positivo do usuário e exibe a música inteira na tela, onde o inteiro recebido representa o número inicial *n* de patinhos que foram passear.
 
-package NewProject;
+R) package NewProject;
 
 import java.util.Scanner;
 
@@ -71,11 +71,11 @@ public class Main {
     }
 }
 
-Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
+3- Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
 mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30.
 (Ex: 3 anos, 2 meses e 15 dias = 1170 dias.)
 
-import java.util.Scanner;
+R) import java.util.Scanner;
 
 public class Age {
     public static void main(String[] args) {
@@ -98,10 +98,10 @@ public class Age {
     }
 }
 
-Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e
+4- Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e
 100, quantos estão entre 101 e 200 e quantos são maiores de 200
 
-import java.util.Scanner;
+R) import java.util.Scanner;
 
 public class ContarNumeros {
     public static void main(String[] args) {
@@ -131,9 +131,9 @@ public class ContarNumeros {
         }
     }
 
-Crie um Objeto chamado Carro, definina quais são as suas caracteristicas e metodos e crie uma outra classe Chamada CarroTeste para criar o objeto e testar.
+5- Crie um Objeto chamado Carro, definina quais são as suas caracteristicas e metodos e crie uma outra classe Chamada CarroTeste para criar o objeto e testar.
 
-public class Carro {
+R) public class Carro {
 
     public String nome;
     public int ano;
@@ -146,7 +146,7 @@ public class Carro {
     }
 }
 
-Crie uma classe Java chamada **`ContaBancaria`** que represente uma conta bancária simples. A classe deve ter os seguintes atributos privados:
+6- Crie uma classe Java chamada **`ContaBancaria`** que represente uma conta bancária simples. A classe deve ter os seguintes atributos privados:
 
 - **`saldo`**, do tipo **`double`**, representando o saldo atual da conta.
 - **`numeroConta`**, do tipo **`String`**, representando o número da conta bancária.
@@ -186,7 +186,7 @@ public class ContaBancaria {
     }
 }
 
-Crie uma classe Java chamada **`Produto`** que represente um produto em um sistema de estoque. A classe deve ter os seguintes atributos privados:
+7- Crie uma classe Java chamada **`Produto`** que represente um produto em um sistema de estoque. A classe deve ter os seguintes atributos privados:
 
 - **`codigo`**, do tipo **`int`**, representando o código do produto.
 - **`descricao`**, do tipo **`String`**, representando a descrição do produto.
@@ -200,7 +200,7 @@ A classe **`Produto`** deve ter os seguintes métodos públicos:
 - Um método chamado **`adicionarEstoque(int quantidade)`** que recebe uma quantidade como parâmetro e adiciona essa quantidade ao estoque do produto.
 - Um método chamado **`removerEstoque(int quantidade)`** que recebe uma quantidade como parâmetro e remove essa quantidade do estoque do produto, desde que haja estoque suficiente. Caso contrário, deve exibir uma mensagem de erro.
 
-public class Produto {
+R) public class Produto {
     private int codigo;
     private String descricao;
     private double preco;
