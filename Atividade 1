@@ -1,6 +1,6 @@
-Crie 10 variáveis de sua escolha, utilize tipos de variáveis diferentes
+1 - Crie 10 variáveis de sua escolha, utilize tipos de variáveis diferentes
 
-int ano = 2024;
+R) int ano = 2024;
 byte idade = 19;
 short temperatura = 21;
 long cpf = 1234567891L;
@@ -11,9 +11,19 @@ char caracter = 'a';
 int alunosSala = 25;
 String texto = "ola mundo";
 
-Corrija os erros de nomenclatura do padrão camelCase e crie no java.
+2 - Corrija os erros de nomenclatura do padrão camelCase e crie no java.
+1. 1nomeProduto
+2. preçoProduto%
+3. marca do produto
+4. quantidade produto
+5. _descricaoProduto
+6. NomeProduto
+7. 123_numeroProduto
+8. precoDoProduto
+9. estoque Disponivel
+10. totaldeProdutos
 
-String nomeProduto;
+R) String nomeProduto;
 float preçoProduto;
 String marcaDoProduto;
 int quantidadeProduto;
@@ -24,9 +34,16 @@ float precoDoProduto;
 int estoqueDisponivel;
 int totalDeProdutos;
 
-Abaixo, você encontrará algumas instruções seguidas por espaços reservados para variáveis. Sua tarefa é identificar o tipo de dado apropriado para cada variável e declará-las corretamente em Java.
+3 - Abaixo, você encontrará algumas instruções seguidas por espaços reservados para variáveis. Sua tarefa é identificar o tipo de dado apropriado para cada variável e declará-las corretamente em Java.
+- Nome do Aluno: [Declare uma variável para armazenar o nome do aluno]
+- Idade do Aluno: [Declare uma variável para armazenar a idade do aluno]
+- Nota da Prova 1: [Declare uma variável para armazenar a nota da primeira prova]
+- Nota da Prova 2: [Declare uma variável para armazenar a nota da segunda prova]
+- Média Final: [Declare uma variável para armazenar a média final das notas]
 
-Nome do Aluno: String nomeAluno;
+Certifique-se de escolher os tipos de dados apropriados para cada variável com base no que será armazenado. Lembre-se de que em Java, os tipos de dados podem incluir inteiros, decimais, texto e assim por diante.
+
+R) Nome do Aluno: String nomeAluno;
 Idade do Aluno: int idadeAluno;
 Nota da Prova 1: float notaPrimeirsProva
 Nota da Prova 2: float notaSegundaProva;
@@ -34,7 +51,7 @@ Média Final: double mediaFinal;
 
 Você foi contratado para desenvolver um programa simples em Java para gerenciar o estoque de uma loja de conveniência. A loja vende uma variedade de produtos, incluindo alimentos, bebidas e produtos de higiene. Seu objetivo é criar um sistema para acompanhar a quantidade de cada produto em estoque.
 
-public class ControleEstoque {
+R) public class ControleEstoque {
     public static void main(String[] args) {
         String nomeProduto;
 				String categoriaProduto;
@@ -46,7 +63,7 @@ public class ControleEstoque {
 
 Vamos praticar a criação de variáveis, inicialização e exibição dos dados em Java! Abaixo está um contexto onde você precisará criar variáveis para representar informações sobre produtos em um estoque, inicializá-las com valores específicos e, em seguida, exibir esses dados.
 
-public class ControleEstoque {
+R) public class ControleEstoque {
     public static void main(String[] args) {
         
         String nomeSmartphone = "Galaxy S22";
@@ -88,7 +105,7 @@ public class ControleEstoque {
 
 Ajuste o código abaixo
 
-public class Main {
+R) public class Main {
     public static void main(String[] args) {
        
         int numeroProduto = 123; 
@@ -102,7 +119,7 @@ public class Main {
         System.out.println("Preco: $" + precoProduto);
         System.out.println("Descricao: " + descricaoProduto);
     }
-}### **Copiei o código abaixo e encontre e ajuste todos os problemas que existem nele:**
+}### **Copie o código abaixo e encontre e ajuste todos os problemas que existem nele:**
 
 ```java
 public class ControleEstoque {
@@ -132,7 +149,7 @@ public class ControleEstoque {
 }
 Copiei o código abaixo e encontre e ajuste todos os problemas que existem nele:
 
-public class ControleEstoque {
+R) public class ControleEstoque {
     public static void main(String[] args) {
      
         String nomeProduto;
