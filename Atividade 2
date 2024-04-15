@@ -24,7 +24,7 @@ class HelloWorld {
     }
 }
 
-O problema está na forma como você está lendo a entrada do nome do usuário. Ao utilizar **`scanner.nextLine()`**, o programa pode pular essa entrada, pois o **`nextInt()`** e **`nextDouble()`** não consomem a quebra de linha após a entrada numérica.
+R) O problema está na forma como você está lendo a entrada do nome do usuário. Ao utilizar **`scanner.nextLine()`**, o programa pode pular essa entrada, pois o **`nextInt()`** e **`nextDouble()`** não consomem a quebra de linha após a entrada numérica.
 
 Para corrigir isso, você pode adicionar um **`scanner.nextLine()`** adicional após a leitura da idade para consumir a quebra de linha pendente antes de ler o nome. Aqui está uma versão corrigida do seu código:
 
