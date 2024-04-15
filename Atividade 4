@@ -1,7 +1,7 @@
-Verificação de idade:
+1- Verificação de idade:
 Escreva um programa Java que pede ao usuário para inserir sua idade. O programa deve então verificar se a idade é maior ou igual a 18. Se for, deve imprimir "Você é maior de idade". Caso contrário, deve imprimir "Você é menor de idade".
 
-package NewProject;
+R) package NewProject;
 
 import java.util.Scanner;
 public class Main {
@@ -22,10 +22,10 @@ public class Main {
         }
     }
 
-Verificação de número par ou ímpar:
+2- Verificação de número par ou ímpar:
 Escreva um programa Java que solicita ao usuário inserir um número inteiro. O programa deve então verificar se o número é par ou ímpar e imprimir a mensagem correspondente.
 
-package NewProject;
+R) package NewProject;
 
 import java.util.Scanner;
 public class Main {
@@ -46,10 +46,10 @@ public class Main {
         }
     }
 
-Verificação de login:
+3- Verificação de login:
 Crie um programa Java que pede ao usuário para inserir seu nome de usuário e senha. Se o nome de usuário for "usuario" e a senha for "senha123", o programa deve imprimir "Login bem-sucedido". Caso contrário, deve imprimir "Nome de usuário ou senha incorretos".
 
-package NewProject;
+R) package NewProject;
 
 import java.util.Scanner;
 public class Main {
@@ -73,10 +73,10 @@ public class Main {
         }
     }
 
-Verificação de maior número:
+4- Verificação de maior número:
 Escreva um programa Java que solicita ao usuário inserir dois números inteiros. O programa deve então determinar qual dos dois números é o maior e imprimir essa informação.
 
-package NewProject;
+R) package NewProject;
 
 import java.util.Scanner;
 public class Main {
